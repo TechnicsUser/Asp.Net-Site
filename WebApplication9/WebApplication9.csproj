@@ -385,6 +385,10 @@
     <Compile Include="Migrations\201909222018113_coralDateChange.Designer.cs">
       <DependentUpon>201909222018113_coralDateChange.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202110252004517_2021new.cs" />
+    <Compile Include="Migrations\202110252004517_2021new.Designer.cs">
+      <DependentUpon>202110252004517_2021new.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AspNetUser.cs">
@@ -536,6 +540,11 @@
     <None Include="Properties\PublishProfiles\Default Settings.pubxml" />
     <None Include="Properties\PublishProfiles\reef-connect - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\reef-connect2 - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\reefConnect - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\reefconnect - FTP1.pubxml" />
+    <None Include="Properties\PublishProfiles\reefConnect - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\reefconnect - Web Deploy1.pubxml" />
+    <None Include="Properties\PublishProfiles\ReefConnectVS - Web Deploy.pubxml" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -693,6 +702,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201909222018113_coralDateChange.resx">
       <DependentUpon>201909222018113_coralDateChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110252004517_2021new.resx">
+      <DependentUpon>202110252004517_2021new.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

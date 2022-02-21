@@ -20,8 +20,9 @@ namespace WebApplication9.Controllers
 
 
         // GET: Corals
-        public ActionResult Index() {
-            var cl = db.Corals.Where(x => x.Name != "test").ToList();
+        public ActionResult Index() 
+            {
+            var cl = db.Corals.Where(x => x.Name != "d22dddd").ToList();
            
             foreach(var c in cl) {
                 CombineCoral(c.CoralId);
@@ -29,6 +30,8 @@ namespace WebApplication9.Controllers
             var coralViewModel = new CoralViewModel(cl);
             return View(coralViewModel);
             }
+
+
         public ActionResult Index1(string id) {
             var cl = db.Corals.Where(x => x.UploadedBy == id).ToList();
             foreach(var c in cl) {
@@ -42,7 +45,7 @@ namespace WebApplication9.Controllers
             var coral = db.Corals.Find(id);
             var CoralPhotoList = db.CoralPhoto.Where(x => x.CoralId == id).ToList();
             if(CoralPhotoList.Count == 0) {
-                id = 61;
+                id = 6;
                 CoralPhotoList.Add(db.CoralPhoto.First(x => x.CoralId == id));
                 }
             coral.PhotoList = CoralPhotoList;
